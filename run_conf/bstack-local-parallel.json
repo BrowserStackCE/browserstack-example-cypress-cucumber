@@ -1,0 +1,50 @@
+{
+  "auth": {
+    "username": "BROWSERSTACK_USERNAME",
+    "access_key": "BROWSERSTACK_ACCESS_KEY"
+  },
+  "browsers": [
+    {
+      "browser": "chrome",
+      "os": "Windows 10",
+      "versions": ["88"]
+    },
+    {
+      "browser": "firefox",
+      "os": "OS X Big Sur",
+      "versions": ["86"]
+    },
+    {
+      "browser": "edge",
+      "os": "Windows 10",
+      "versions": ["88"]
+    },
+    {
+      "browser": "chrome",
+      "os": "OS X Catalina",
+      "versions": ["89"]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "cypress_local.json",
+    "project_name": "BrowserStack",
+    "build_name": "browserstack-examples-cypress-cucumber",
+    "exclude": [],
+    "cypress_version": "6",
+    "parallels": "5",
+    "npm_dependencies": {
+      "cypress-cucumber-preprocessor": "^4.3.1",
+      "cypress-xpath": "^1.6.2"
+    },
+    "package_config_options": {
+      "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true
+      }
+    }
+  },
+  "connection_settings": {
+    "local": true,
+    "local_identifier": null
+  },
+  "disable_usage_reporting": false
+}

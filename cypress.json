@@ -1,0 +1,5 @@
+{
+  "watchForFileChanges": true,
+  "testFiles": "**/*.feature",
+  "baseUrl":"https://bstackdemo.com/"
+}
