@@ -1,6 +1,6 @@
 ![Logo](https://www.browserstack.com/images/static/header-logo.jpg)
 
-# <h1 align="center"> :zap: BrowserStack Cypress Cucumber Examples <a href="https://www.cypress.io/"><img src="https://www.cypress.io/static/cypress-io-logo-social-share-8fb8a1db3cdc0b289fad927694ecb415.png" alt="Cypress" height="32" /></a> <a href="https://cucumber.io"><img src="https://brandslogos.com/wp-content/uploads/images/large/cucumber-logo.png" alt="Cucumber" height="22" /></a> :zap:</h1>
+# <h1 align="center"> :zap: BrowserStack Cypress Cucumber Examples <a href="https://www.cypress.io/"><img src="https://www.cypress.io/static/cypress-io-logo-social-share-8fb8a1db3cdc0b2latestfad927694ecb415.png" alt="Cypress" height="32" /></a> <a href="https://cucumber.io"><img src="https://brandslogos.com/wp-content/uploads/images/large/cucumber-logo.png" alt="Cucumber" height="22" /></a> :zap:</h1>
 
 ## Introduction
 
