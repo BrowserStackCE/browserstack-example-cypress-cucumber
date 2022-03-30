@@ -72,7 +72,7 @@ This infrastructure points to running the tests on your own machine using the Cy
   npm run on-prem-default
   ```
 
-  - To run a specific test scenario, use the following command with the spec file path as an argument:
+  - To run a specific test scenario, use the following command with the feature file path as an argument:
 
   ```sh
   npm run on-prem "cypress/integration/<FEATURE_FILE_NAME>.feature"
@@ -158,19 +158,19 @@ In this section, we will run a single test on Chrome browser on Browserstack. To
   npm run bstack-single-default
   ```
 
-  - To run specific test scenario on a single BrowserStack browser, use the following command with the spec file path as an argument:
+  - To run specific test scenario on a single BrowserStack browser, use the following command with the feature file path as an argument:
 
   ```sh
-  npm run bstack-single --spec "cypress/integration/<TEST_SUITE_NAME>/<SPEC_FILE_NAME>.spec.ts"
+  npm run bstack-single --spec "cypress/integration/<FEATURE_FILE_NAME>.feature"
   ```
 
   Example:
 
   ```sh
-  npm run bstack-single --spec "cypress/integration/user/existing_orders.spec.ts"
+  npm run bstack-single --spec "cypress/integration/user.feature"
   ```
 
-  where, the argument 'TEST_SUITE_NAME' can be any Cypress suite name configured in the integrations folder and 'SPEC_FILE_NAME' can be any of the spec files in that particular suite.
+  where, the argument 'TEST_SUITE_NAME' can be any Cypress suite name configured in the integrations folder and 'FEATURE_FILE_NAME' can be any of the feature files in that particular suite.
 
   E.g. "Login as username", "Login as Locked User", "Offers for mumbai geo-location" or any of the other test scenario names, as outlined in [About the tests in this repository](#About-the-tests-in-this-repository) section.
 
@@ -243,19 +243,19 @@ In this section, we will run the tests in parallel on multiple browsers on Brows
   npm run bstack-local-default
   ```
 
-  - To run a specific test scenario on a single BrowserStack browser using BrowserStackLocal, use the following command with the spec file path as an argument:
+  - To run a specific test scenario on a single BrowserStack browser using BrowserStackLocal, use the following command with the feature file path as an argument:
 
   ```sh
-  npm run bstack-local --spec "cypress/integration/<TEST_SUITE_NAME>/<SPEC_FILE_NAME>.spec.ts"
+  npm run bstack-local --spec "cypress/integration/<FEATURE_FILE_NAME>.feature"
   ```
 
   Example:
 
   ```sh
-  npm run bstack-local --spec "cypress/integration/user/existing_orders.spec.ts"
+  npm run bstack-local --spec "cypress/integration/user.feature"
   ```
 
-  where, the argument 'TEST_SUITE_NAME' can be any Cypress suite name configured in the integrations folder and 'SPEC_FILE_NAME' can be any of the spec files in that particular suite.
+  where, the argument 'TEST_SUITE_NAME' can be any Cypress suite name configured in the integrations folder and 'FEATURE_FILE_NAME' can be any of the feature files in that particular suite.
 
   E.g. "Login as username", "Login as Locked User", "Offers for mumbai geo-location" or any of the other test scenario names, as outlined in [About the tests in this repository](#About-the-tests-in-this-repository) section.
 
@@ -323,4 +323,4 @@ In this section, we will run the test cases to test the internally hosted websit
 
 ## Open Issues
 
-- The test `offers/offers_for_mumbai.spec.ts` does not work due to a known and recognized issue from Cypress. More information can be found [here](https://github.com/cypress-io/cypress/issues/2671).
+- The test `cypress/integration/offers.feature` does not work due to a known and recognized issue from Cypress. More information can be found [here](https://github.com/cypress-io/cypress/issues/2671).
