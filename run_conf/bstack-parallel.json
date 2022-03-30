@@ -7,22 +7,22 @@
     {
       "browser": "chrome",
       "os": "Windows 10",
-      "versions": ["latest"]
+      "versions": ["latest", "latest-1"]
     },
     {
       "browser": "firefox",
       "os": "OS X Big Sur",
-      "versions": ["latest"]
+      "versions": ["latest", "latest-1"]
     },
     {
       "browser": "edge",
       "os": "Windows 10",
-      "versions": ["latest"]
+      "versions": ["latest", "latest-1"]
     },
     {
       "browser": "chrome",
       "os": "OS X Catalina",
-      "versions": ["latest"]
+      "versions": ["latest", "latest-1"]
     }
   ],
   "run_settings": {
