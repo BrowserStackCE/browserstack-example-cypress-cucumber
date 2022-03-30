@@ -1,0 +1,35 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "scripts": {
+    "test": "npm run cypress:run 'cypress/integration/end_to_end.feature'",
+    "clean:reports": "rm -rf cypress/report/ && rm -rf cypress/videos/ && rm -rf cypress/screenshots/",
+    "cypress:run": "npm run clean:reports && npx cypress run --config-file cypress.json --spec",
+    "cypress:open": "cypress open",
+    "on-prem": "npm run cypress:run",
+    "on-prem-default": "npm run cypress:run 'cypress/integration/end_to_end.feature'",
+    "bstack-single": "browserstack-cypress --config-file run_conf/bstack-single.json run --sync --spec",
+    "bstack-single-default": "browserstack-cypress --config-file run_conf/bstack-single.json run --sync --spec 'cypress/integration/end_to_end.feature'",
+    "bstack-local": "browserstack-cypress --config-file run_conf/bstack-local-single.json run --sync --spec",
+    "bstack-local-default": "browserstack-cypress --config-file run_conf/bstack-local-single.json run --sync --spec 'cypress/integration/end_to_end.feature'",
+    "bstack-local-parallel": "browserstack-cypress --config-file run_conf/bstack-local-single.json run --sync --parallels",
+    "bstack-local-parallel-browsers": "browserstack-cypress --config-file run_conf/bstack-local-parallel.json run --sync --parallels",
+    "bstack-parallel": "browserstack-cypress --config-file run_conf/bstack-single.json run --sync --parallels",
+    "bstack-parallel-browsers": "browserstack-cypress --config-file run_conf/bstack-parallel.json run --sync --parallels"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.2.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^1.6.2"
+  }
+}
