@@ -1,6 +1,6 @@
 Feature: Login Feature
 
-  @user @examples
+    @user @examples
   Scenario Outline: Login with given <username> user
     Given I navigate to website
     And I click on "Sign In" link
@@ -15,7 +15,7 @@ Feature: Login Feature
       | 'image_not_loading_user' | 'testingisfun99' |
       | 'existing_orders_user'   | 'testingisfun99' |
 
-  @user
+    @user
   Scenario: Login as Locked User
     Given I navigate to website
     And I click on "Sign In" link

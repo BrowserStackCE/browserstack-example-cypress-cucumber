@@ -8,7 +8,7 @@ const {
 } = require("cypress-cucumber-preprocessor/steps");
 require("cypress-xpath");
 
-import Login from "../../pageObjects/login";
+import Login from "../../pages/login";
 const login = new Login();
 
 Given("I navigate to website", () => {
@@ -18,11 +18,11 @@ And("I SignIn as {string} with {string} password", (username, password) => {
   login
     .username()
     .should("be.visible")
-    .click({ force: true })
+    .click()
     .type(username + "{enter}");
   login
     .password()
-    .click({ force: true })
+    .click()
     .type(password + "{enter}");
   login.logInButton().click();
 });

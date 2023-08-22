@@ -8,15 +8,15 @@ const {
 
 require("cypress-xpath");
 
-import Login from "../../pageObjects/login";
-import Purchase from "../../pageObjects/purchase";
-import Orders from "../../pageObjects/orders";
+import Login from "../../pages/login";
+import Purchase from "../../pages/purchase";
+import Orders from "../../pages/orders";
 
 const login = new Login();
 const purchase = new Purchase();
 const orders = new Orders();
 
-Given("I navigate to website", () => {
+Given("I navigate to signin website", () => {
   cy.visit(Cypress.config().baseUrl + "signin");
 });
 
@@ -51,7 +51,7 @@ And(
   }
 );
 And("I click on Checkout Button", () => {
-  orders.checkout().click();
+  orders.checkout().click({ force: true });
   cy.contains("Continue ").click();
 });
 And("I click on {string} link", (link) => {
