@@ -1,8 +1,8 @@
 Feature: End to End Feature
 
-  @e2e @smoke
+    @e2e @smoke
   Scenario: End to End Scenario
-    Given I navigate to website
+    Given I navigate to signin website
     And I SignIn as "fav_user" with "testingisfun99" password
     And I add three products to cart
     And I click on Buy Button

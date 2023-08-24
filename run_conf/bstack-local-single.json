@@ -11,11 +11,11 @@
     }
   ],
   "run_settings": {
-    "cypress_config_file": "cypress_local.json",
+    "cypress_config_file": "cypress_local.config.js",
     "project_name": "BrowserStack",
     "build_name": "browserstack-examples-cypress-cucumber",
     "exclude": [],
-    "cypress_version": "6",
+    "cypress_version": "11",
     "parallels": "5",
     "npm_dependencies": {
       "cypress-cucumber-preprocessor": "^4.3.1",
@@ -23,7 +23,7 @@
     },
     "package_config_options": {
       "cypress-cucumber-preprocessor": {
-        "nonGlobalStepDefinitions": true
+        "stepDefinitions": "cypress/support/step_definitions"
       }
     }
   },

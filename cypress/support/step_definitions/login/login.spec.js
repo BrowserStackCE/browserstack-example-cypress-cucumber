@@ -7,7 +7,7 @@ const {
   And,
 } = require("cypress-cucumber-preprocessor/steps");
 
-import Login from "../../pageObjects/login";
+import Login from "../../pages/login";
 const login = new Login();
 
 Given("I navigate to website", () => {
@@ -20,13 +20,13 @@ And('I type {string} in "username"', (username) => {
   login
     .username()
     .should("be.visible")
-    .click({ force: true })
+    .click()
     .type(username + "{enter}");
 });
 And('I type {string} in "password"', (password) => {
   login
     .password()
-    .click({ force: true })
+    .click()
     .type(password + "{enter}");
 });
 And("I press Log In Button", () => {

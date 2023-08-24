@@ -21,7 +21,7 @@ Then("I should see {int} items in the list", (number) => {
 
 And("I order by lowest to highest", () => {
   cy.get("select").select("lowestprice");
-  // .get("option[value = 'lowestprice']").click({ force: true });
+  // .get("option[value = 'lowestprice']").click();
 });
 
 // TODO:
